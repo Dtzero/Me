@@ -12,3 +12,13 @@
 		<!-- <script type="text/javascript" src="./js/jquery.mCustomScrollbar.concat.min.js"></script> -->
 		<!-- stylesheet for demo and examples -->
 	<!-- <link type="text/css" rel="stylesheet" href="./css/jquery.mCustomScrollbar.css"> -->
+
+	<div>
+					<input type="text" id="yourDepart" class="input-text text" placeholder="您的单位或姓名" />
+				</div>
+				<div>
+					<input type="text" id="yourEmail"  class="input-text text" placeholder="您的邮箱" />
+				</div>
+				<div id="yourMessage" class="div-text text">
+					<div class="div-text-inset" contenteditable="true"></div>
+				</div>

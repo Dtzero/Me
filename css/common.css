@@ -14,3 +14,9 @@ html{
 a{
     color: #fff;
 }
+
+.page-top-title{
+    font-weight: bold;
+    font-size: 24px;
+    color: #36D1C4;
+}
