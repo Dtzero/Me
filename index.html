@@ -81,13 +81,14 @@
 	</aside>
 
 	<!-- 主页面 -->
-	<!-- <div id="content" class="content"> -->
+
+		<!-- home -->
 		<div id="war-home" class="war war-1 section">
 			<div id="home" class="war-content war-content-1">
 				<div class="war-content-1-title"></div>
 			</div>
 		</div>
-
+		<!-- info -->
 		<div id="war-info" class="war war-2 section">
 			<div id="war-2-sun" class="war-2-sun"></div>
 			<img class="war-2-bottom" src="./images/bg2.png" />
@@ -98,12 +99,12 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- skill -->
 		<div id="war-skill" class="war war-3 section">
 			<div id="war-1-moon" class="war-1-moon"></div>
 			<div id="skill" class="war-content war-content-3"></div>
 		</div>
-
+		<!-- mood -->
 		<div id="war-mood" class="war war-4 section">
 			<div id="mood" class="war-content war-content-4">
 				<div id="mood-cloud" class="mood-cloud"></div>
@@ -118,24 +119,39 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- article -->
 		<div id="war-article" class="war war-5 section">
-			<div id="article" class="war-content"></div>
+			<div id="article" class="war-content war-content-5">
+				<div class="article-left">
+					<div class="article-sty article-1"></div>
+					<div class="article-sty article-2"></div>
+				</div>
+				<div class="article-3">
+					<div class="article-3-title"></div>
+					<a href="http://ztf.coding.io/" target="_blank"><div class="article-3-more"></div></a>
+				</div>
+				<div class="article-right">
+					<div class="article-sty article-4"></div>
+					<div class="article-sty article-5"></div>
+				</div>
+			</div>
 		</div>
-
+		<!-- photo -->
 		<div id="war-photo" class="war war-6 section">
 			<div id="photo" class="war-content"></div>
 		</div>
-
+		<!-- project -->
 		<div id="war-project" class="war war-7 section">
 			<div id="project" class="war-content"></div>
 		</div>
-
+		<!-- message -->
 		<div id="war-message" class="war war-8 section">
 			<div id="message" class="war-content war-content-8">
 				<footer>
+					<div class="message-callMe">
+						<div class="message-callMe-click"></div>
+					</div>
 					<div class="callMe-war">
-						<!-- <h1 class="callMe-title">点击下面链接与我交流吧...</h1> -->
 						<a class="callMe-link" href="https://github.com/xinliuruoxi" target="_blank">
 							<img src="./images/github.png" />
 						</a>
@@ -152,7 +168,6 @@
 				</footer>
 			</div>
 		</div>
-	<!-- </div> -->
 
 	<!-- custom scrollbar plugin -->
 	<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
@@ -161,16 +176,5 @@
 	<script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="./js/index.js"></script>
-	<script type="text/javascript">
-		(function($){
-			$(window).load(function(){
-				
-				$("#yourMessage").mCustomScrollbar({
-					theme:"minimal"
-				});
-				
-			});
-		})(jQuery);
-	</script>
 </body>
 </html>

@@ -1,3 +1,13 @@
+(function($){
+	$(window).load(function(){
+				
+		$("#yourMessage").mCustomScrollbar({
+			theme:"minimal"
+		});
+				
+	});
+})(jQuery);
+
 $(document).ready(function(){
 	setSize();
 
@@ -17,10 +27,14 @@ $(document).ready(function(){
 				$('#war-2-sun').fadeOut(500);
 			}
 			if(index == 3){
-				
+				$('#war-1-moon').animate({
+					left: '-200px'
+				},300);
 			}
 			if(index == 4){
-				
+				$('#mood-cloud').animate({
+					left: '150%'
+				},300);
 			}
 		},
 		afterLoad: function(anchorLink, index){
@@ -74,8 +88,21 @@ $(document).ready(function(){
 			}
 		}
 	});
+	setInterval(footerAnimate,1000);
 });
 
+//设置footer部分动画
+var footerAnimate=function(){
+	$('.message-callMe-click').animate({
+		top: '5px'
+	},500,function(){
+		$('.message-callMe-click').animate({
+			top: '0px'
+		},500);
+	});
+};
+
+//设置元素尺寸
 var setSize=function(){
 	var nWinHeight=$(window).height();
 
