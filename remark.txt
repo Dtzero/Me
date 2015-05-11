@@ -22,3 +22,13 @@
 				<div id="yourMessage" class="div-text text">
 					<div class="div-text-inset" contenteditable="true"></div>
 				</div>
+
+				(function($){
+	$(window).load(function(){
+				
+		$("#yourMessage").mCustomScrollbar({
+			theme:"minimal"
+		});
+				
+	});
+})(jQuery);

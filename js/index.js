@@ -1,20 +1,56 @@
-(function($){
-	$(window).load(function(){
-				
-		$("#yourMessage").mCustomScrollbar({
-			theme:"minimal"
-		});
-				
-	});
-})(jQuery);
-
 $(document).ready(function(){
+
+	//浏览器窗口改变，设置页面尺寸
 	setSize();
 
 	$(window).resize(function(){
 		setSize();
 	});
 
+
+	//article部分动画设置
+	// $('#article-1').mouseover(function(){
+	// 	$(this).animate({
+	// 		width: '70%'
+	// 	});
+	// 	$('#article-2').animate({
+	// 		width: '30%'
+	// 	});
+	// });
+	// $('#article-1').mouseout(function(){
+	// 	$(this).animate({
+	// 		width: '50%'
+	// 	});
+	// 	$('#article-2').animate({
+	// 		width: '50%'
+	// 	});
+	// });
+	// $('#article-2').mouseover(function(){
+	// 	$(this).animate({
+	// 		width: '70%'
+	// 	});
+	// 	$('#article-1').animate({
+	// 		width: '30%'
+	// 	});
+	// });
+	// $('#article-2').mouseout(function(){
+	// 	$(this).animate({
+	// 		width: '50%'
+	// 	});
+	// 	$('#article-1').animate({
+	// 		width: '50%'
+	// 	});
+	// });
+
+	//$('#article-2')
+
+	//$('#article-4')
+
+	//$('#article-5')
+
+
+
+	//fullpage插件设置页面切换
 	$.fn.fullpage({
 		scrollingSpeed: 500,
 		css3: true,
@@ -88,6 +124,8 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+	//footer部分动画循环
 	setInterval(footerAnimate,1000);
 });
 
