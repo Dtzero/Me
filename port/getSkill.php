@@ -10,7 +10,7 @@
 	$value=null;
 	$row_me=mysql_fetch_object($sql_me);
 	if($row_me != NULL){
-		$value='"name":"'.$row_me->name.'","birthday":"'.$row_me->birthday.'","phone":"'.$row_me->phone.'","email":"'.$row_me->email.'","college":"'.$row_me->college.'","major":"'.$row_me->major.'","degree":"'.$row_me->degree.'","work":"'.$row_me->work.'","skill":[{';
+		$value='"name":"'.$row_me->name.'","birthday":"'.$row_me->birthday.'","phone":"'.$row_me->phone.'","email":"'.$row_me->email.'","college":"'.$row_me->college.'","major":"'.$row_me->major.'","degree":"'.$row_me->degree.'","work":"'.$row_me->work.'","practice":"'.$row_me->practice.'","hobby":'.$row_me->hobby.',"evaluation":'.$row_me->evaluation.',"skill":[{';
 	}
 
 	$sql = mysql_query("select * from myskill where id=1");
