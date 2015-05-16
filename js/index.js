@@ -1,54 +1,23 @@
 $(document).ready(function(){
 
+	$_Query.ajax('GET','./port/getSkill.php',{},function(data){
+		var aSkill=data.skill[0];
+		for(var index in aSkill){
+			var adata=aSkill[index].split('-');
+			$('#war-content-skill').append('<li class="skill_list">'+
+							'<div class="course">'+index+':</div>'+
+							'<div style="overflow: hidden;"><div class="courses" style="background-color: '+adata[1]+';width: '+adata[0]+';">'+adata[0]+'</div></div>'+
+						'</li>');
+		}
+		
+	});
+
 	//浏览器窗口改变，设置页面尺寸
 	setSize();
 
 	$(window).resize(function(){
 		setSize();
 	});
-
-
-	//article部分动画设置
-	// $('#article-1').mouseover(function(){
-	// 	$(this).animate({
-	// 		width: '70%'
-	// 	});
-	// 	$('#article-2').animate({
-	// 		width: '30%'
-	// 	});
-	// });
-	// $('#article-1').mouseout(function(){
-	// 	$(this).animate({
-	// 		width: '50%'
-	// 	});
-	// 	$('#article-2').animate({
-	// 		width: '50%'
-	// 	});
-	// });
-	// $('#article-2').mouseover(function(){
-	// 	$(this).animate({
-	// 		width: '70%'
-	// 	});
-	// 	$('#article-1').animate({
-	// 		width: '30%'
-	// 	});
-	// });
-	// $('#article-2').mouseout(function(){
-	// 	$(this).animate({
-	// 		width: '50%'
-	// 	});
-	// 	$('#article-1').animate({
-	// 		width: '50%'
-	// 	});
-	// });
-
-	//$('#article-2')
-
-	//$('#article-4')
-
-	//$('#article-5')
-
-
 
 	//fullpage插件设置页面切换
 	$.fn.fullpage({
@@ -148,4 +117,7 @@ var setSize=function(){
 	$('aside').css({'top': (nWinHeight-$('aside').height())/2});
 
 	var nContentTop=$('#content').css('top');
+
+	var marginTop=(nWinHeight-520)/2>100?(nWinHeight-520)/2:100;
+	$('#war-content-skill').css({'margin-top':marginTop});
 };

@@ -1,5 +1,61 @@
 //
+var $_Query=(function(){
 
+	//getId
+	//必选参数: (string)idName
+	var id=function(idName){
+		return document.getElementById(idName);
+	};
+
+	//ajax
+	var ajax=function(){
+		var type=arguments[0];
+		var url=arguments[1];
+		var data=arguments[2];
+		var callback=arguments[3];
+
+		var sUrl,sData='';
+		for(var dataIndex in data){
+		 	sData+=dataIndex+'='+data[dataIndex]+'&';
+		}
+		if(type.toLowerCase()==='get'){
+			sData=sData.substr(0,sData.length-1);
+			sUrl=url+'?'+sData;
+			sData=null;
+		}else if(type.toLowerCase()==='post'){
+			sUrl=url;
+		}
+		//alert(sUrl);
+
+		//创建XMLHttp对象
+		var xmlHttp=null;
+		if(window.XMLHttpRequest){
+			xmlHttp=new XMLHttpRequest();
+		}else{
+			xmlHttp=new ActiveXObject('Microsoft.XMLHTTP');
+		}
+
+		//onreadystatechange事件触发
+		xmlHttp.onreadystatechange=function(){
+			if(xmlHttp.readyState==4){
+				if(xmlHttp.status==200){
+					var res=JSON.parse(xmlHttp.responseText);
+					callback(res[0]);
+				}
+			}
+		};
+
+		//发送请求
+		xmlHttp.open(type, sUrl, true);
+		xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xmlHttp.send(sData);
+	};
+
+	return {
+		id: id,
+		ajax: ajax
+	};
+})();
 
 //jQuery.easing.js
 jQuery.easing['jswing'] = jQuery.easing['swing'];

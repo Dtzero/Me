@@ -55,7 +55,7 @@ nav{
 }
 .war{
     width: 100%;
-    min-width: 1300px;
+    min-width: 1200px;
     min-height: 600px;
     position: relative;
     height: 100%;
@@ -147,9 +147,46 @@ nav{
 }
 .war-content-3{
     width: 100%;
-    height: auto;
+    height: 100%;
     min-height: 600px;
     background: url('../images/star.png') no-repeat top 10% center;
+    overflow: hidden;
+    position: relative;
+}
+.war-content-w{
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    background: url('../images/skillbg.png') no-repeat left top;
+}
+.war-content-skill{
+    width: 1000px;
+    min-height: 500px;
+    height: 70%;
+    margin-left: 100px;
+}
+.skill_list{
+    height: 26px;
+    background: rgba(255,255,255,0.1);
+    margin: 8px 0;
+    padding: 4px;
+    border-radius: 26px;
+}
+.course{
+    float: left;
+    padding: 0 10px;
+    width: 100px;
+    font-size: 16px;
+    text-align: right;
+    height: 26px;
+    line-height: 26px;
+}
+.courses{
+    height: 26px;
+    border-radius: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #666;
 }
 
 /*mood---------------------------*/
@@ -224,10 +261,10 @@ nav{
     float: left;
 }
 .article-1{
-    background: #E7E3CA url('../images/articlebg/articlebg1.png') top center no-repeat;
+    background: #E7E3CA;
 }
 .article-2{
-    background: #443435 url('../images/articlebg/articlebg2.png') top center no-repeat;
+    background: #443435;
 }
 .article-3{
     width: 20%;
@@ -254,10 +291,10 @@ nav{
     border-radius: 50%;
 }
 .article-4{
-    background: #9F959D url('../images/articlebg/articlebg4.png') top center no-repeat;
+    background: #9F959D;
 }
 .article-5{
-    background: #66A1A5 url('../images/articlebg/articlebg5.png') top center no-repeat;
+    background: #66A1A5;
 }
 
 /*photo--------------------------*/
