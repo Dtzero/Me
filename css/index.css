@@ -55,7 +55,7 @@ nav{
 }
 .war{
     width: 100%;
-    min-width: 1200px;
+    min-width: 1000px;
     min-height: 600px;
     position: relative;
     height: 100%;
@@ -89,6 +89,7 @@ nav{
     background: -ms-linear-gradient(top,  rgba(146,246,237,1) 0%,rgba(219,220,136,1) 67%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(146,246,237,1) 0%,rgba(219,220,136,1) 67%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92f6ed', endColorstr='#dbdc88',GradientType=0 ); /* IE6-8 */
+    overflow: hidden;
 }
 .war-2-bottom{
     position: absolute;
@@ -107,23 +108,67 @@ nav{
     display: none;
 }
 .war-content-2{
+    position: absolute;
     width: 100%;
     height: auto;
-    min-height: 600px;
+    height: 500px;
 }
-.war-content-2-info{
+.info-content{
+    font-size: 16px;
+    color: #fff;
     height: 500px;
     width: 1000px;
     margin: 0 auto;
+    /*background-color: rgba(255,255,255,0.3);*/
 }
-.info-content-sty{
-    border-radius: 10px;
+.info-content-main{
+    padding: 20px;
+    height: auto;
+    /*background: rgba(255,255,255,0.3);*/
 }
-.info-content-1{
-    height: 140px;
-    width: 800px;
+.info-content-middle{
+    margin: 0 25px;
+    text-align: center;
+}
+.info-photo{
+    display: none;
+    height: 200px;
+    width: 200px;
     margin: 0 auto;
-    background: rgba(255,255,255,0.8);
+    background: url('../images/ico_bg.png') 0px -570px no-repeat;
+    border-radius: 200px;
+    border: 8px solid rgba(255,255,255,0.5);
+}
+.info-name{
+    display: none;
+    margin: 10px auto 0 auto;
+    height: 50px;
+    width: 120px;
+    background: url('../images/ico_bg.png') -220px -300px no-repeat;
+}
+.info-love{
+    overflow: hidden;
+    width: 0;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: 'Courier';
+    border-top: 3px solid rgba(255,255,255,0.2);
+    font-size: 20px;
+}
+#loveword{
+    display: none;
+}
+.info-work{
+    display: none;
+    padding-top: 10px;
+    font-family: 'Microsoft YaHei';
+    font-size: 24px;
+}
+.info-email{
+    display: none;
+    font-size: 18px;
+    padding-top: 10px;
+    font-family: 'Courier';
 }
 
 /*skill-----------------------------*/
@@ -141,7 +186,7 @@ nav{
     height: 200px;
     width: 200px;
     position: absolute;
-    left: -200px;
+    right: -200px;
     top: 10%;
     background: url('../images/ico_bg.png') -220px -70px no-repeat;
 }
@@ -154,7 +199,7 @@ nav{
     position: relative;
 }
 .war-content-w{
-    width: 1100px;
+    width: 1000px;
     height: auto;
     margin: 0 auto;
 }
@@ -165,7 +210,7 @@ nav{
     background: url('../images/ico_bg.png') -420px -70px no-repeat;
 }
 .war-content-skill{
-    width: 1000px;
+    width: 900px;
     min-height: 500px;
     height: 70%;
     margin-left: 100px;
@@ -194,7 +239,7 @@ nav{
     color: #666;
 }
 
-/*mood---------------------------*/
+/*practice---------------------------*/
 .war-4{
     background: rgb(138,249,249); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(138,249,249,1) 0%, rgba(237,240,242,1) 100%); /* FF3.6+ */
@@ -208,43 +253,49 @@ nav{
 .war-content-4{
     height: 100%;
     min-height: 600px;
-    width: 1100px;
+    width: 1000px;
     margin: 0 auto;
     position: relative;
 }
-.mood-cloud{
+.practice-cloud{
+    z-index: 900;
     width: 700px;
     height: 200px;
-    background: rgba(0,0,0,0) url('../images/ico_bg.png') -540px -310px no-repeat;
+    background: url('../images/ico_bg.png') -540px -310px no-repeat;
     position: absolute;
     bottom: 50%;
     left: 100%;
 }
-.mood-tree{
+.practice-tree{
+    z-index: 900;
     width: 700px;
     height: 300px;
-    background: rgba(0,0,0,0) url('../images/ico_bg.png') -540px 0px no-repeat;
+    background: url('../images/ico_bg.png') -540px 0px no-repeat;
     position: absolute;
     bottom: 0;
     right: 0;
 }
-.mood-content{
-    position: absolute;
-    min-height: 500px;
-    height: 70%;
-    width: 1040px;
-    padding: 0 30px;
-    background: rgba(255,255,255,0.4);
-    border-radius: 20px;
-    margin-top: 100px;
+.practice-content{
+    position: relative;
+    z-index: 910;
+    height: 500px;
+    width: 1000px;
 }
-.mood-content-title{
-    text-align: center;
-    border-bottom: 2px solid #36D1C4;
-    padding: 24px 0 14px 0;
+.company-logo{
+    height: 80px;
+    width: 450px;
+    margin: 0 auto;
+    display: none;
+}
+.logo-link{
+    display: block; 
+    overflow: hidden; 
+    height: 80px; 
+    width: 450px;
+    margin: 0 auto;
 }
 
-/*article--------------------------*/
+/*project--------------------------*/
 .war-5{
     
 }
@@ -253,64 +304,19 @@ nav{
     min-height: 600px;
     width: 100%;
 }
-.article-sty{
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-.article-left,.article-right{
-    width: 40%;
-    height: 100%;
-    float: left;
-}
-.article-1{
-    background: #E7E3CA;
-}
-.article-2{
-    background: #443435;
-}
-.article-3{
-    width: 20%;
-    height: 100%;
-    float: left;
-    background: #2c2c2c url('../images/article.png') no-repeat;
-    background-size: 100% 100%;
-    position: relative;
-}
-.article-3-title{
-    height: 120px;
-    width: 200px;
-    background: url('../images/ico_bg.png') 0 -310px no-repeat;
-    margin: 60% auto 0 auto;
-}
-.article-3-more{
-    position: absolute;
-    bottom: 14%;
-    left: 50%;
-    margin-left: -70px;
-    width: 140px;
-    height: 140px;
-    background: #162A29 url('../images/ico_bg.png') 0 -430px no-repeat;
-    border-radius: 50%;
-}
-.article-4{
-    background: #9F959D;
-}
-.article-5{
-    background: #66A1A5;
-}
 
-/*photo--------------------------*/
+
+/*education--------------------------*/
 .war-6{
     background: #2e384b;
 }
 
-/*project-------------------------*/
+/*hobby-------------------------*/
 .war-7{
     background: #25282D;
 }
 
-/*message-------------------------*/
+/*more-------------------------*/
 .war-8{
     background: #232120 url('../images/bg8.png') no-repeat top left;
     background-size: 100%;

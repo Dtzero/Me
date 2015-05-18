@@ -25,13 +25,13 @@
 
 	<!-- 顶部 Nav -->
 	<header>
-		<a id="logo" href="./index.html"></a>
+		<a id="logo" href="./"></a>
 		<nav>
 			<ul>
 				<a href="javascript:;"><li id="nav-mood" class="nav"><h1>冒泡&心情</h1></li></a>
 				<a href="javascript:;"><li id="nav-article" class="nav"><h1>随笔&日志</h1></li></a>
-				<a href="javascript:;"><li id="nav-photo" class="nav"><h1>相册</h1></li></a>
-				<a href="javascript:;"><li id="nav-project" class="nav"><h1>项目</h1></li></a>
+				<a href="javascript:;"><li id="nav-photo" class="nav"><h1>个人相册</h1></li></a>
+				<a href="javascript:;"><li id="nav-project" class="nav"><h1>项目经验</h1></li></a>
 			</ul>
 		</nav>
 	</header>
@@ -54,28 +54,28 @@
 			</div>
 		</a>
 		<a href="#page4">
-			<div id="page-mood"    class="page page-4">
-				<div class="page-title">心情&冒泡</div>
+			<div id="page-practice"    class="page page-4">
+				<div class="page-title">实习经历</div>
 			</div>
 		</a>
 		<a href="#page5">
-			<div id="page-article" class="page page-5">
-				<div class="page-title">随笔&日志</div>
+			<div id="page-project" class="page page-5">
+				<div class="page-title">项目经验</div>
 			</div>
 		</a>
 		<a href="#page6">
-			<div id="page-photo"   class="page page-6">
-				<div class="page-title">相册</div>
+			<div id="page-education"   class="page page-6">
+				<div class="page-title">教育程度</div>
 			</div>
 		</a>
 		<a href="#page7">
-			<div id="page-project" class="page page-7">
-				<div class="page-title">项目</div>
+			<div id="page-hobby" class="page page-7">
+				<div class="page-title">简介&兴趣</div>
 			</div>
 		</a>
 		<a href="#page8">
-			<div id="page-message" class="page page-8">
-				<div class="page-title">给我留言</div>
+			<div id="page-more" class="page page-8">
+				<div class="page-title">了解更多</div>
 			</div>
 		</a>
 	</aside>
@@ -95,7 +95,13 @@
 
 			<div id="info" class="war-content war-content-2">
 				<div id="info-content" class="info-content">
-					<!-- <div id="info-content-1" class="info-content-sty info-content-1"></div> -->
+					<div class="info-content-middle info-content-main">
+						<div id="info-photo" class="info-photo"></div>
+						<div id="info-name" class="info-name"></div>
+						<div id="info-love" class="info-love"><span id="loveword"></span></div>
+						<div id="info-email" class="info-email"></div>
+						<div id="info-work" class="info-work"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -106,50 +112,33 @@
 				<div class="war-content-w">
 					<div class="war-skill-bg"></div>
 					<ul id="war-content-skill" class="war-content-skill"></ul>
+					<input id="hidden" type="hidden" value="" />
 				</div>
 			</div>
 		</div>
-		<!-- mood -->
-		<div id="war-mood" class="war war-4 section">
-			<div id="mood" class="war-content war-content-4">
-				<div id="mood-cloud" class="mood-cloud"></div>
-				<div id="mood-tree" class="mood-tree"></div>
-				<div id="mood-content" class="mood-content">
-					<div id="mood-content-title" class="mood-content-title">
-						<h1><span class="page-top-title">心情&冒泡</span></h1>
-					</div>
-					<div class="">
-						
-					</div>
-				</div>
+		<!-- practice -->
+		<div id="war-practice" class="war war-4 section">
+			<div id="practice" class="war-content war-content-4">
+				<div id="practice-cloud" class="practice-cloud"></div>
+				<div id="practice-tree" class="practice-tree"></div>
+				<div id="practice-content" class="practice-content"></div>
 			</div>
-		</div>
-		<!-- article -->
-		<div id="war-article" class="war war-5 section">
-			<div id="article" class="war-content war-content-5">
-				<div class="article-left">
-					<div id="article-1" class="article-sty article-1"></div>
-					<div id="article-2" class="article-sty article-2"></div>
-				</div>
-				<div class="article-3">
-					<div class="article-3-title"></div>
-					<a href="http://ztf.coding.io/" target="_blank"><div class="article-3-more"></div></a>
-				</div>
-				<div class="article-right">
-					<div id="article-4" class="article-sty article-4"></div>
-					<div id="article-5" class="article-sty article-5"></div>
-				</div>
-			</div>
-		</div>
-		<!-- photo -->
-		<div id="war-photo" class="war war-6 section">
-			<div id="photo" class="war-content"></div>
 		</div>
 		<!-- project -->
-		<div id="war-project" class="war war-7 section">
-			<div id="project" class="war-content"></div>
+		<div id="war-project" class="war war-5 section">
+			<div id="project" class="war-content war-content-5">
+				
+			</div>
 		</div>
-		<!-- message -->
+		<!-- education -->
+		<div id="war-education" class="war war-6 section">
+			<div id="education" class="war-content"></div>
+		</div>
+		<!-- hobby -->
+		<div id="war-hobby" class="war war-7 section">
+			<div id="hobby" class="war-content"></div>
+		</div>
+		<!-- more -->
 		<div id="war-message" class="war war-8 section">
 			<div id="message" class="war-content war-content-8">
 				<footer>

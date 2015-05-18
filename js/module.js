@@ -40,7 +40,8 @@ var $_Query=(function(){
 			if(xmlHttp.readyState==4){
 				if(xmlHttp.status==200){
 					var res=JSON.parse(xmlHttp.responseText);
-					callback(res[0]);
+					//var res=xmlHttp.responseText;
+					callback(res);
 				}
 			}
 		};
