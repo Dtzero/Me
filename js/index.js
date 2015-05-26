@@ -1,15 +1,16 @@
 $(document).ready(function(){
 
+	//显示信息
 	$_Query.ajax('GET','./port/message.json',{},function(data){
 		$('#loveword').text(data.motto);
 		$('#info-email').text(data.email);
 		$('#info-work').text(data.work);
 
-		var aPractice=data.practice;
-		for(var prac in aPractice){
-			$('#practice-content').append('<a class="logo-link" target="_blank" href="'+aPractice[prac].link+'"><div id="logo-'+prac+'" class="company-logo"></div></a>');
-			$('#logo-'+prac).css({'background': aPractice[prac].logo});
-		}
+		// var aPractice=data.practice;
+		// for(var prac in aPractice){
+		// 	$('#practice-content').append('<a class="logo-link" target="_blank" href="'+aPractice[prac].link+'"><div id="logo-'+prac+'" class="company-logo"></div></a>');
+		// 	$('#logo-'+prac).css({'background': aPractice[prac].logo});
+		// }
 
 		var aSkill=data.skill[0];
 		var hidden='';
@@ -22,6 +23,27 @@ $(document).ready(function(){
 			hidden+=index+':'+adata[0]+',';
 		}
 		$('#hidden').addClass(hidden);
+
+		var aProject=data.project;
+		for(var proj in aProject){
+			if(proj<3){
+				var aTime=aProject[proj].time.split('-');
+				$('#war-project-right').append('<div class="project-list">'+
+								'<div class="project-list-left"><div>'+aTime[0]+'</div><div>|</div><div>'+aTime[1]+'</div></div>'+
+								'<div class="project-list-right">'+
+									'<div class="project-list-name">'+
+										'<a href="'+aProject[proj].link+'" target="_blank">'+aProject[proj].name+'</a>'+
+									'</div>'+
+									'<div class="project-list-work">'+
+										'<span class="list-title">职能分工：</span>'+aProject[proj].work+
+									'</div>'+
+									'<div class="project-list-info">'+
+										'<span class="list-title">项目简介：</span>'+aProject[proj].info+
+									'</div>'+
+								'</div>'+			
+							'</div>');
+			}
+		}
 	});
 
 	//浏览器窗口改变，设置页面尺寸
@@ -65,6 +87,14 @@ $(document).ready(function(){
 					left: '150%'
 				},300);
 				$('.company-logo').fadeOut(200);
+				$('#practice-title').animate({
+					height: 0,
+					width: 0,
+					left: '90px'
+				},300);
+			}
+			if(index == 5){
+				$('#war-project-right').fadeOut(400);
 			}
 		},
 		afterLoad: function(anchorLink, index){
@@ -109,6 +139,11 @@ $(document).ready(function(){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
 				$('#page-practice').css({"background": "url('./images/ico_bg.png') -14px -50px no-repeat"});
 				
+				$('#practice-title').animate({
+					height: '390px',
+					width: '180px',
+					left: 0
+				},1500);
 				$('#practice-cloud').animate({
 					left: 0
 				},1000);
@@ -117,7 +152,7 @@ $(document).ready(function(){
 			if(index == 5){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
 				$('#page-project').css({"background": "url('./images/ico_bg.png') -14px -50px no-repeat"});
-				//$('header').fadeIn();
+				$('#war-project-right').fadeIn(800);
 			}
 			if(index == 6){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
@@ -164,4 +199,5 @@ var setSize=function(){
 	var marginTop=(nWinHeight-520)/2>100?(nWinHeight-520)/2:100;
 	$('#war-content-skill,#info-content').css({'margin-top':marginTop});
 	$('#practice-content').css({'padding-top':marginTop});
+	$('#project-content').css({'padding-top':marginTop});
 };

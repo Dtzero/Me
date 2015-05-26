@@ -199,7 +199,7 @@ nav{
     position: relative;
 }
 .war-content-w{
-    width: 1000px;
+    width: 1100px;
     height: auto;
     margin: 0 auto;
 }
@@ -216,11 +216,11 @@ nav{
     margin-left: 100px;
 }
 .skill_list{
-    height: 26px;
+    height: 20px;
     background: rgba(255,255,255,0.1);
     margin: 8px 0;
     padding: 4px;
-    border-radius: 26px;
+    border-radius: 20px;
 }
 .course{
     float: left;
@@ -228,13 +228,13 @@ nav{
     width: 100px;
     font-size: 16px;
     text-align: right;
-    height: 26px;
-    line-height: 26px;
+    height: 20px;
+    line-height: 20px;
 }
 .courses{
-    height: 26px;
-    border-radius: 26px;
-    line-height: 26px;
+    height: 20px;
+    border-radius: 20px;
+    line-height: 20px;
     text-align: center;
     color: #666;
 }
@@ -253,9 +253,20 @@ nav{
 .war-content-4{
     height: 100%;
     min-height: 600px;
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
     position: relative;
+}
+.practice-title{
+    /*height: 390px;
+    width: 180px;*/
+    height: 0;
+    width: 0;
+    z-index: 800;
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    /*background: url('../images/practice.png') 100% 100%;*/
 }
 .practice-cloud{
     z-index: 900;
@@ -282,37 +293,96 @@ nav{
     width: 1000px;
 }
 .company-logo{
-    height: 80px;
-    width: 450px;
+    height: 70px;
+    width: 355px;
     margin: 0 auto;
     display: none;
 }
 .logo-link{
     display: block; 
     overflow: hidden; 
-    height: 80px; 
-    width: 450px;
+    height: 70px; 
+    width: 355px;
     margin: 0 auto;
 }
 
 /*project--------------------------*/
 .war-5{
-    background: rgb(237,240,242); /* Old browsers */
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZjBmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNzJjM2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top,  rgba(237,240,242,1) 0%, rgba(39,44,58,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,240,242,1)), color-stop(100%,rgba(39,44,58,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(237,240,242,1) 0%,rgba(39,44,58,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(237,240,242,1) 0%,rgba(39,44,58,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(237,240,242,1) 0%,rgba(39,44,58,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(237,240,242,1) 0%,rgba(39,44,58,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf0f2', endColorstr='#272c3a',GradientType=0 ); /* IE6-8 */
-
+    background: #55EBD0 url('../images/point-layer.png') 100% 100%;
 }
 .war-content-5{
     height: 100%;
     min-height: 600px;
     width: 100%;
+    position: relative;
+}
+.project-content{
+    position: relative;
+    z-index: 910;
+    height: 500px;
+    width: 1100px;
+    margin: 0 auto;
+/*    background-color: rgba(255,255,255,0.1);*/
+}
+.war-project-bg{
+    float: left;
+    height: 450px;
+    width: 140px;
+    background: url('../images/ico_bg.png') -1240px -50px no-repeat;
+    position: relative;
+}
+.war-project-more{
+    height: 92px;
+    width: 92px;
+    display: block;
+    position: absolute;
+    left: 3px;
+    bottom: 51px;
+}
+.war-project-right{
+    overflow: hidden;
+    height: 500px;
+    display: none;
+}
+.project-list{
+    height: 160px;
+}
+.project-list-left{
+    padding-top: 50px;
+    height: 110px;
+    width: 180px;
+    background: url('../images/ico_bg.png') -670px -570px no-repeat;
+    font-size: 16px;
+    font-family: Georgia;
+    text-align: center;
+    line-height: 20px;
+    color: #dd9daa;
+    float: left;
+}
+.project-list-left div{
+    width: 110px;
+}
+.project-list-right{
+    height: 130px;
+    overflow: hidden;
+    padding: 15px;
+    font-size: 16px;
+    color: #666;
+}
+.project-list-name{
+    color: #dd9daa;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.project-list-name a{
+    color: #dd9daa;
+}
+.project-list-work,.project-list-info{
+    line-height: 22px;
+}
+.list-title{
+    color: #fff;
 }
 
 

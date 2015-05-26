@@ -2,7 +2,7 @@
 	"name": "张腾飞",
 	"birthday": "1993",
 	"phone": "13572424158",
-	"email": "ztf@ztf.me && xinliuruoxi@foxmail.com",
+	"email": "i@ztf.me && xinliuruoxi@foxmail.com",
 	"motto":"Because of love, so love!",
 	"college": "西安邮电大学",
 	"major": "软件工程",
@@ -26,10 +26,31 @@
 		"PhotoShop": "60%-#81A8F6"
 	}],
 	"practice":[{
-			"name":"蘑菇街",
-			"logo":"url('./images/ico_bg.png') -220px -570px no-repeat",
-			"time":"2015/07/20-2015/09/01",
-			"work":"Web前端开发",
-			"link":"http://www.mogujie.com"
-		}]
+		"name":"蘑菇街",
+		"logo":"url('./images/ico_bg.png') -220px -570px no-repeat",
+		"time":"2015/07/20-2015/09/01",
+		"work":"Web前端开发",
+		"link":"http://www.mogujie.com"
+	}],
+	"project":[{
+		"name":"西邮移动应用开发实验室网站",
+		"link":"http://xiyoumobile.com",
+		"time":"2014/10-2015/06",
+		"work":"项目组长，负责项目整体设计，前端重要页面的编码、Ajax、后台编码与数据库设计。",
+		"info":"应实验室发展需求，对实验室网站进行重构，增加相应需要的页面和功能模块。该网站是西邮移动应用开发实验室官网，主要为展示实验室风采、增强对外交流、帮助需要的同学了解实验室以及提供报名服务。"
+	},
+	{
+		"name":"多用户个人博客系统",
+		"link":"http://i.ztf.me",
+		"time":"2014/10-2015/06",
+		"work":"负责整个项目设计，所有前端编码、Ajax、所有后台编码和数据库设计。",
+		"info":"使用( CSS+HTML+JavaScript+jQuery+Ajax等 )前端技术、PHP技术、Mongodb数据库设计的个人博客系统，实现了心情、日志的发表，照片，项目的上传以及留言等基本功能。"
+	},
+	{
+		"name":"MyCollege校园综合网站",
+		"link":"http://mycollege.coding.io",
+		"time":"2014/11-2015/07",
+		"work":"项目组长，负责项目整体设计、前端重要页面的编码、Ajax、教务系统和图书馆接口解析、后台编码与数据库设计。",
+		"info":"实现了校园服务的整合，该网站包含：易校园（校园二手市场）、资料库、订餐吧、成绩单、图书查询、学生组织、实验室等页面，满足大学生校园生活和学习的基本需求。"
+	}]
 }
