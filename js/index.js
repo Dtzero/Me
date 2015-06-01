@@ -5,6 +5,10 @@ $(document).ready(function(){
 		$('#loveword').text(data.motto);
 		$('#info-email').text(data.email);
 		$('#info-work').text(data.work);
+		$('#education-college').text(data.college);
+		$('#education-major').text(data.major);
+		$('#education-degree').text(data.degree);
+		$('#education-lab').text(data.lab);
 
 		// var aPractice=data.practice;
 		// for(var prac in aPractice){
@@ -81,6 +85,7 @@ $(document).ready(function(){
 					right: '-200px'
 				},300);
 				$('.courses').animate({width: 0},300);
+				$('#war-skill-bg').fadeOut(200);
 			}
 			if(index == 4){
 				$('#practice-cloud').animate({
@@ -95,6 +100,15 @@ $(document).ready(function(){
 			}
 			if(index == 5){
 				$('#war-project-right').fadeOut(400);
+				$('#war-project-bg').animate({
+					left: '-100px'
+				},200);
+			}
+			if(index == 6){
+				$('.education-list-con').slideUp(300);
+				$('#education-title-sty').animate({
+					left: '900px'
+				});
 			}
 		},
 		afterLoad: function(anchorLink, index){
@@ -131,8 +145,9 @@ $(document).ready(function(){
 				for(var i=0; i<hiddenData.length-1; i++){
 					var skillName=hiddenData[i].split(':')[0];
 					var skillNumber=hiddenData[i].split(':')[1];
-					$('#'+skillName).animate({width: skillNumber},800);
+					$('#'+skillName).animate({width: skillNumber},800,'easeOutQuart');
 					//alert(skillName+','+skillNumber);
+					$('#war-skill-bg').fadeIn(600);
 				}
 			}
 			if(index == 4){
@@ -143,7 +158,7 @@ $(document).ready(function(){
 					height: '390px',
 					width: '180px',
 					left: 0
-				},1500);
+				},1000);
 				$('#practice-cloud').animate({
 					left: 0
 				},1000);
@@ -153,11 +168,20 @@ $(document).ready(function(){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
 				$('#page-project').css({"background": "url('./images/ico_bg.png') -14px -50px no-repeat"});
 				$('#war-project-right').fadeIn(800);
+				$('#war-project-bg').animate({
+					left: 0
+				},500);
 			}
 			if(index == 6){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
 				$('#page-education').css({"background": "url('./images/ico_bg.png') -14px -50px no-repeat"});
-				//$('header').fadeIn();
+				$('#education-college').slideDown(800,'easeOutElastic');
+				var set_1=setTimeout(function(){$('#education-major').slideDown(800,'easeOutElastic');},200);
+				var set_2=setTimeout(function(){$('#education-degree').slideDown(800,'easeOutElastic');},400);
+				var set_3=setTimeout(function(){$('#education-lab').slideDown(800,'easeOutElastic');},600);
+				$('#education-title-sty').animate({
+					left: '450px'
+				},800,'easeInOutExpo');
 			}
 			if(index == 7){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
@@ -200,4 +224,12 @@ var setSize=function(){
 	$('#war-content-skill,#info-content').css({'margin-top':marginTop});
 	$('#practice-content').css({'padding-top':marginTop});
 	$('#project-content').css({'padding-top':marginTop});
+	$('#education-content').css({'padding-top':marginTop});
+	// $(document).on('mouseover','.education-list',function(){
+	// 	$(this).find('.education-list-con').slideDown();
+	// });
+	// $(document).on('mouseout','.education-list',function(){
+	// 	$(this).find('.education-list-con').stop();
+	// 	$(this).find('.education-list-con').slideUp();
+	// });
 };
