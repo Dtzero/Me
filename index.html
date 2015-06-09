@@ -108,7 +108,7 @@
 		<!-- skill -->
 		<div id="war-skill" class="war war-3 section">
 			<div id="war-1-moon" class="war-1-moon"></div>
-			<div id="skill" class="war-content war-content-3">
+			<div id="skill" class="war-content contentWar war-content-3">
 				<div class="war-content-w">
 					<div id="war-skill-bg" class="war-skill-bg"></div>
 					<ul id="war-content-skill" class="war-content-skill"></ul>
@@ -118,26 +118,34 @@
 		</div>
 		<!-- practice -->
 		<div id="war-practice" class="war war-4 section">
-			<div id="practice" class="war-content war-content-4">
+			<div id="practice" class="war-content contentWar war-content-4">
 				<img id="practice-title" class="practice-title" src="./images/practice.png" />
 				<div id="practice-cloud" class="practice-cloud"></div>
 				<div id="practice-tree" class="practice-tree"></div>
-				<div id="practice-content" class="practice-content"></div>
+				<div id="practice-content" class="practice-content contentMain"></div>
 			</div>
 		</div>
 		<!-- project -->
 		<div id="war-project" class="war war-5 section">
-			<div id="project" class="war-content war-content-5">
-				<div id="project-content" class="project-content">
-					<div id="war-project-bg" class="war-project-bg"><a class="war-project-more" href="javascript:alert('项目展示页面正在努力完成中，此处展示最新的三个项目，请稍等...');" target="_blank"></a></div>
+			<!-- <div class="bottomLeft_bg"></div> -->
+			<div class="topLeft_bg"></div>
+			<div class="topRight_bg"></div>
+			<div id="project" class="war-content contentWar war-content-5">
+				<div id="project-content" class="project-content contentMain">
+					<div id="war-project-bg" class="war-project-bg">
+						<a class="war-project-more" href="javascript:alert('项目展示页面正在努力完成中，此处展示最新的三个项目，请稍等...');" target="_blank">
+							<!-- <div class="more_top"></div>  眨眼睛效果
+							<div class="more_bot"></div> -->
+						</a>
+					</div>
 					<div id="war-project-right" class="war-project-right"></div>
 				</div>
 			</div>
 		</div>
 		<!-- education -->
 		<div id="war-education" class="war war-6 section">
-			<div id="education" class="war-content war-content-6">
-				<div id="education-content" class="education-content">
+			<div id="education" class="war-content contentWar war-content-6">
+				<div id="education-content" class="education-content contentMain">
 					<!-- <div class="education-title">
 						<div id="education-title-sty" class="education-title-sty">教育程度</div>
 					</div> -->
@@ -168,7 +176,24 @@
 		</div>
 		<!-- hobby -->
 		<div id="war-hobby" class="war war-7 section">
-			<div id="hobby" class="war-content"></div>
+			<div class="bottom_bg"></div>
+			<div class="top_bg"></div>
+			<div id="hobby" class="war-content contentWar war-content-7">
+				<div id="hobby-content" class="hobby-content contentMain">
+					<div id="hobby_main" class="hobby_main">
+						<div class="hobby_main_topRight"></div>
+						<div class="hobby_main_bottomLeft"></div>
+						<div class="hobbyInfo_mess hobby_mess">
+							<div class="hobbyInfo_title">兴趣爱好</div>
+							<div id="hobby_war" class="hobbyInfo_main"></div>
+						</div>
+						<div class="hobbyInfo_mess info_mess">
+							<div class="hobbyInfo_title">个人简介</div>
+							<div id="info_war" class="hobbyInfo_main"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- more -->
 		<div id="war-message" class="war war-8 section">
@@ -192,8 +217,9 @@
 						</a>
 					</div>
 					<div class="declare">
-						Designed by ZTF &copy;2015-2016&nbsp;&nbsp;
-						<a href="http://www.miitbeian.gov.cn/" target="_blank">陕ICP备15006219号</a>
+						Copyright &copy; 2015-2016 ZTF Copyright Holder All Rights Reserved&nbsp;
+						<a href="http://www.miitbeian.gov.cn/" target="_blank">陕ICP备15006219号</a>&nbsp;
+						<!-- Designed by ZTF -->
 					</div>
 				</footer>
 			</div>

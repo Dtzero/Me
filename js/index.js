@@ -16,6 +16,16 @@ $(document).ready(function(){
 		// 	$('#logo-'+prac).css({'background': aPractice[prac].logo});
 		// }
 
+		var hobby=data.hobby;
+		for(var hob in hobby){
+			$('#hobby_war').append('<div class="hobbyInfo_list"><'+hobby[hob]+'/></div>');
+		}
+
+		var evaluation=data.evaluation;
+		for(var eva in evaluation){
+			$('#info_war').append('<div class="hobbyInfo_list"><'+evaluation[eva]+'/></div>');
+		}
+
 		var aSkill=data.skill[0];
 		var hidden='';
 		for(var index in aSkill){
@@ -44,7 +54,7 @@ $(document).ready(function(){
 									'<div class="project-list-info">'+
 										'<span class="list-title">项目简介：</span>'+aProject[proj].info+
 									'</div>'+
-								'</div>'+			
+								'</div>'+
 							'</div>');
 			}
 		}
@@ -103,11 +113,20 @@ $(document).ready(function(){
 				$('#war-project-bg').animate({
 					left: '-100px'
 				},200);
+				$('.topLeft_bg,.topRight_bg').fadeOut(300);
 			}
 			if(index == 6){
 				$('.education-list-con').slideUp(300);
 				$('#education-title-sty').animate({
 					left: '900px'
+				});
+			}
+			if(index == 7){
+				$('#hobby_main').animate({
+					'margin-top': '50%',
+					'margin-left': '50%',
+					height: '0',
+					width: '0'
 				});
 			}
 		},
@@ -137,7 +156,7 @@ $(document).ready(function(){
 			if(index == 3){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
 				$('#page-skill').css({"background": "url('./images/ico_bg.png') -14px -50px no-repeat"});
-				
+
 				$('#war-1-moon').animate({
 					right: '200px'
 				},800);
@@ -153,7 +172,7 @@ $(document).ready(function(){
 			if(index == 4){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
 				$('#page-practice').css({"background": "url('./images/ico_bg.png') -14px -50px no-repeat"});
-				
+
 				$('#practice-title').animate({
 					height: '390px',
 					width: '180px',
@@ -171,6 +190,7 @@ $(document).ready(function(){
 				$('#war-project-bg').animate({
 					left: 0
 				},500);
+				$('.topLeft_bg,.topRight_bg').fadeIn(1200);
 			}
 			if(index == 6){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
@@ -187,6 +207,12 @@ $(document).ready(function(){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
 				$('#page-hobby').css({"background": "url('./images/ico_bg.png') -14px -50px no-repeat"});
 				//$('header').fadeIn();
+				$('#hobby_main').animate({
+					'margin-top': 0,
+					'margin-left': 0,
+					height: '500px',
+					width: '1000px'
+				},1000,'easeOutElastic');
 			}
 			if(index == 8){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
@@ -198,7 +224,31 @@ $(document).ready(function(){
 
 	//footer部分动画循环
 	setInterval(footerAnimate,1000);
+
+	//项目部分动画循环
+	// setInterval(moreAnimate,4000);
 });
+
+//项目部分更多项目效果---旋转效果
+// var moreAnimate=function(){
+// 	$('.more_top,.more_bot').animate({
+//
+// 	},300,function(){
+// 		$('.more_top,.more_bot').animate({
+//
+// 		},300);
+// 	});
+// };
+//项目部分更多项目效果---眨眼睛效果
+// var moreAnimate=function(){
+// 	$('.more_top,.more_bot').animate({
+// 		height: '46px'
+// 	},300,function(){
+// 		$('.more_top,.more_bot').animate({
+// 			height: '0'
+// 		},300);
+// 	});
+// };
 
 //设置footer部分动画
 var footerAnimate=function(){
@@ -225,6 +275,7 @@ var setSize=function(){
 	$('#practice-content').css({'padding-top':marginTop});
 	$('#project-content').css({'padding-top':marginTop});
 	$('#education-content').css({'padding-top':marginTop});
+	$('#hobby-content').css({'padding-top':marginTop});
 	// $(document).on('mouseover','.education-list',function(){
 	// 	$(this).find('.education-list-con').slideDown();
 	// });
