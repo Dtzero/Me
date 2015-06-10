@@ -109,7 +109,7 @@
     },
     {
       "name": "多用户个人博客系统（由于MongoDB无法部署，只能展示静态内容）",
-      "link": "http://ztf.coding.io",
+      "link": "http://blog.ztf.me",
       "time": "2014/11-2015/**",
       "work": "负责整个项目设计，所有前端编码、Ajax、所有后台编码和数据库设计。",
       "info": "使用( CSS+HTML+JavaScript+jQuery+Ajax等 )前端技术、PHP技术、Mongodb数据库设计的个人博客系统，实现了心情、日志的发表，照片，项目的上传以及留言等基本功能。"
