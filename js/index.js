@@ -5,6 +5,7 @@ $(document).ready(function(){
 		$('#loveword').text(data.motto);
 		$('#info-email').text(data.email);
 		$('#info-work').text(data.work);
+		$('#info-phone').text('Tel:'+data.phone);
 		$('#education-college').text(data.college);
 		$('#education-major').text(data.major);
 		$('#education-degree').text(data.degree);
@@ -83,7 +84,9 @@ $(document).ready(function(){
 						$('#info-love').animate({width: '0'},200,function(){
 							$('#loveword').fadeOut(200,function(){
 								$('#info-email').fadeOut(200,function(){
-									$('#info-work').fadeOut(200);
+									$('#info-phone').fadeOut(200,function(){
+										$('#info-work').fadeOut(200);
+									});
 								});
 							});
 						});
@@ -146,7 +149,9 @@ $(document).ready(function(){
 						$('#info-love').animate({width: '100%'},500,function(){
 							$('#loveword').fadeIn(500,function(){
 								$('#info-email').fadeIn(500,function(){
-									$('#info-work').fadeIn(500);
+									$('#info-phone').fadeIn(500,function(){
+										$('#info-work').fadeIn(500);
+									});
 								});
 							});
 						});

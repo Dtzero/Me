@@ -177,7 +177,7 @@ nav{
     font-family: 'Microsoft YaHei';
     font-size: 24px;
 }
-.info-email{
+.info-email,.info-phone{
     display: none;
     font-size: 18px;
     padding-top: 10px;
