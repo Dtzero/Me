@@ -73,7 +73,7 @@ $(document).ready(function(){
 		scrollingSpeed: 500,
 		css3: true,
 		scrollOverflow: false,
-		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+		//anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
 		menu: 'header,aside',
 		verticalCentered: false,
 		onLeave: function(index , nextIndex, direction){
