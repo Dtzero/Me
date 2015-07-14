@@ -1,0 +1,15 @@
+.war{
+	height: 100%;
+}
+#move{
+	height: auto;
+}
+.war_1{
+	background: #000;
+}
+.war_2{
+	background: red;
+}
+.war_3{
+	background: green;
+}

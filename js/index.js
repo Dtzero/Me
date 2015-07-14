@@ -11,12 +11,6 @@ $(document).ready(function(){
 		$('#education-degree').text(data.degree);
 		$('#education-lab').text(data.lab);
 
-		// var aPractice=data.practice;
-		// for(var prac in aPractice){
-		// 	$('#practice-content').append('<a class="logo-link" target="_blank" href="'+aPractice[prac].link+'"><div id="logo-'+prac+'" class="company-logo"></div></a>');
-		// 	$('#logo-'+prac).css({'background': aPractice[prac].logo});
-		// }
-
 		var hobby=data.hobby;
 		for(var hob in hobby){
 			$('#hobby_war').append('<div class="hobbyInfo_list"><'+hobby[hob]+'/></div>');
@@ -73,7 +67,7 @@ $(document).ready(function(){
 		scrollingSpeed: 500,
 		css3: true,
 		scrollOverflow: false,
-		//anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
 		menu: 'header,aside',
 		verticalCentered: false,
 		onLeave: function(index , nextIndex, direction){
@@ -230,30 +224,7 @@ $(document).ready(function(){
 	//footer部分动画循环
 	setInterval(footerAnimate,1000);
 
-	//项目部分动画循环
-	// setInterval(moreAnimate,4000);
 });
-
-//项目部分更多项目效果---旋转效果
-// var moreAnimate=function(){
-// 	$('.more_top,.more_bot').animate({
-//
-// 	},300,function(){
-// 		$('.more_top,.more_bot').animate({
-//
-// 		},300);
-// 	});
-// };
-//项目部分更多项目效果---眨眼睛效果
-// var moreAnimate=function(){
-// 	$('.more_top,.more_bot').animate({
-// 		height: '46px'
-// 	},300,function(){
-// 		$('.more_top,.more_bot').animate({
-// 			height: '0'
-// 		},300);
-// 	});
-// };
 
 //设置footer部分动画
 var footerAnimate=function(){
@@ -281,11 +252,4 @@ var setSize=function(){
 	$('#project-content').css({'padding-top':marginTop});
 	$('#education-content').css({'padding-top':marginTop});
 	$('#hobby-content').css({'padding-top':marginTop});
-	// $(document).on('mouseover','.education-list',function(){
-	// 	$(this).find('.education-list-con').slideDown();
-	// });
-	// $(document).on('mouseout','.education-list',function(){
-	// 	$(this).find('.education-list-con').stop();
-	// 	$(this).find('.education-list-con').slideUp();
-	// });
 };
