@@ -3,7 +3,7 @@ html,body{
     /*font-family: 'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;*/
     color: #fff;
     height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 a{
     color: #fff;

@@ -1,15 +1,36 @@
 .war{
-	height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+    position: relative;
+    height: 100%;
 }
-#move{
-	height: auto;
+
+.war-0{
+	background: blue;
 }
-.war_1{
-	background: #000;
-}
-.war_2{
+.war-1{
 	background: red;
 }
-.war_3{
+.war-2{
 	background: green;
 }
+.war-3{
+	background: blue;
+}
+.war-4{
+	background: black;
+}
+.war-5{
+	background: #2db8ad;
+}
+.war-6{
+	background: #ff9daa;
+}
+.war-7{
+	background: #ccc;
+}
+.war-8{
+	background: #353433;
+}
+
