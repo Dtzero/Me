@@ -11,12 +11,26 @@ $(document).ready(function(){
 		dataType: 'json',
 		success: function(data){
 			for(var i in data.project){
-				$('#main').append('<a style="background: '+ data.project[i].bg_color +'" href="#page'+ i +'" class="main-list">'+ data.project[i].name +'</a>');
+				var width='100%';
+				if(data.project[i].type=='h5'){
+					width='400px';
+				}else{
+					width='100%';
+				}
+				var name=data.project[i].name.replace(/\（[\u2E80-\u9FFF,\W,\w]*\）/,'');
+				$('#main').append('<a style="background: '+ data.project[i].bg_color +'" href="#page'+ i +'" class="main-list">'+ name +'</a>');
 				$('body').append(
 					'<div id="war-'+ i +'" class="war war-'+ i +' section" style="background: '+ data.project[i].bg_color +'">'+
 						'<div class="page_main">'+
-							'<div class="info info_word">'+ data.project[i].name +'</div>'+
-							'<div class="info info_img" style="background: '+ data.project[i].bg_image +'; background-size: 100%;"></div>'+
+							'<div class="info info_word">'+
+								'<div class="info_wra">'+
+									'<div class="info_name">'+ data.project[i].name +'</div>'+
+									'<div class="info_work">'+ data.project[i].work +'</div>'+
+									'<div class="info_info">'+ data.project[i].info +'</div>'+
+									'<a class="info_link" href="'+ data.project[i].link +'" target="_blank">访问 》</a>'+
+								'</div>'+
+							'</div>'+
+							'<div class="info info_img" style="background: '+ data.project[i].bg_image +'; background-size: 100%; width: '+ width +'"></div>'+
 						'</div>'+
 					'</div>');
 			}
@@ -43,10 +57,12 @@ $(document).ready(function(){
 				$('#back').animate({
 					'right': '-40px'
 				});	
+				$('#logo').css({'background': '#ff9daa', 'color': '#fff'});
 			}else{
 				$('#back').animate({
 					'right': '0px'
 				});
+				$('#logo').css({'background': '#fff', 'color': '#999'});
 			}
 		}
 	});

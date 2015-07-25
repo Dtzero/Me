@@ -44,8 +44,10 @@
       "name": "蘑菇街",
       "logo": "url('./images/ico_bg.png') -220px -570px no-repeat",
       "time": "2015/07/20-2015/09/01",
+      "dept": "研发部－无线&前端",
       "work": "Web前端开发",
-      "link": "http://www.mogujie.com"
+      "link": "http://www.mogujie.com",
+      "info": ""
     }
   ],
   "coding": [
@@ -62,15 +64,17 @@
   "project": [
     {
       "bg_color": "#f5e653",
+      "bg_image": "url('./images/projectsBg/ow.png') top center no-repeat",
       "type": "h5",
-      "name": "One's World",
-      "link": "http://onesworld.ztf.me",
+      "name": "One's World（正在编写后台接口，前端页面暂时现显示设计图）",
+      "link": "http://ztf.me/onesworld/world.html",
       "time": "2015/06-2015/**",
       "work": "独立完成，负责页面设计及前后台编码。",
       "info": "移动Web项目，后期将打包成移动App。本项目主要包含世界（心里话的倾诉（公开或私密），备忘记录）、天气（天气查询）、静静（烦躁、伤心、失落、犯错、失恋时通过音乐或图片使得到暂时平静与放松）。目前，只实现单用户版。后台使用ThinkPHP编写Api，前台通过Ajax调用解析Api进行数据交互。"
     },
     {
       "bg_color": "rgb(146,246,237)",
+      "bg_image": "url('./images/projectsBg/se.png') top center no-repeat",
       "type": "h5",
       "name": "西安邮电大学高考信息查询",
       "link": "http://search.ztf.me",
@@ -93,7 +97,7 @@
       "bg_image": "url('./images/projectsBg/wf.png') top center no-repeat",
       "type": "pc",
       "name": "陕西省影视产业管理平台（外包陕西省广电局项目，即将上线）",
-      "link": "http://124.115.8.38/index.php?uid=35",
+      "link": "http://124.115.8.38/login.php",
       "time": "2015/05-2015/06",
       "work": "主要负责管理系统的前端页面设计、实现以及文件上传的Ajax方式上传、普通Ajax交互等。",
       "info": "承接陕西省广电局项目，主要实现陕西省影视产业管理功能。针对各影视公司和广电局管理员实现相应的管理操作，如：影视、新闻、友情链接的添加、修改、删除功能，以及用户审核等管理，根据用户分类分为普通用户和管理员两个模块。"
@@ -110,6 +114,7 @@
     },
     {
       "bg_color": "#f9bc84",
+      "bg_image": "url('./images/projectsBg/ca.png') top center no-repeat",
       "type": "h5",
       "name": "Care--宠物公益网站",
       "link": "http://care.ztf.me",
@@ -122,7 +127,7 @@
       "bg_image": "url('./images/projectsBg/wj.png') top center no-repeat",
       "type": "pc",
       "name": "JoinWeb--实验室Web组纳新管理操作平台",
-      "link": "http://web.ztf.me",
+      "link": "http://ztf.me/JoinWeb/index.php?user=04123148&pass=294cd3e5d8ebba84775ce8e3d014cc5b",
       "time": "2015/03-2015/03",
       "work": "负责整个项目编码及设计，完成报名网站后台处理操作及接口解析与交互设计。",
       "info": "实现实验室报名网站报名信息的后台处理，针对实验室纳新设计完成面试信息实时的更新。在方便各小组纳新信息处理、统计的同时，也使面试者能最快查询面试结果。通过Ajax请求解析给定Api获得数据，进行操作实现全部功能。"
@@ -149,9 +154,10 @@
     },
     {
       "bg_color": "#FF9DAA",
+      "bg_image": "url('./images/projectsBg/bl.png') top center no-repeat",
       "type": "pc",
       "name": "多用户个人博客系统（由于MongoDB无法部署，只能展示静态内容）",
-      "link": "http://blog.ztf.me",
+      "link": "http://ztf.coding.io/",
       "time": "2014/11-2015/**",
       "work": "负责整个项目设计，所有前端编码、Ajax、所有后台编码和数据库设计。",
       "info": "使用( CSS+HTML+JavaScript+jQuery+Ajax等 )前端技术、PHP技术、Mongodb数据库设计的个人博客系统，实现了心情、日志的发表，照片，项目的上传以及留言等基本功能。"

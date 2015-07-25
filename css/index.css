@@ -291,24 +291,31 @@ nav{
     right: 0;
 }
 .practice-content{
-    /*position: relative;
+    position: relative;
     z-index: 910;
     height: 500px;
-    width: 1000px;*/
+    width: 1000px;
+    margin: 0 auto;
+    color: #2db8ad;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
 }
 .company-logo{
     height: 70px;
     width: 355px;
     margin: 0 auto;
-    display: none;
+    opacity: 0;
 }
-.logo-link{
-    display: block;
-    overflow: hidden;
-    height: 70px;
-    width: 355px;
-    margin: 0 auto;
+.company-work{
+    font-size: 26px;
+    color: #2db8ad;
 }
+.company-time{
+    font-size: 16px;
+    color: #999;
+}
+
 
 /*project--------------------------*/
 .war-5{

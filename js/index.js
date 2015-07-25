@@ -21,6 +21,14 @@ $(document).ready(function(){
 			$('#info_war').append('<div class="hobbyInfo_list"><'+evaluation[eva]+'/></div>');
 		}
 
+		var aPractice=data.practice[0];
+		$('#practice-content').append(
+			'<div class="company-logo" style="background: '+ aPractice.logo +'"></div>'+
+			'<div class="company-dept">'+ aPractice.dept +'</div>'+
+			'<div class="company-work">'+ aPractice.work +'</div>'+
+			'<div class="company-time">'+ aPractice.time +'</div>'+
+			'<div class="company-info">'+ aPractice.info +'</div>');
+
 		var aSkill=data.skill[0];
 		var hidden='';
 		for(var index in aSkill){
@@ -98,7 +106,9 @@ $(document).ready(function(){
 				$('#practice-cloud').animate({
 					left: '150%'
 				},300);
-				$('.company-logo').fadeOut(200);
+				$('.company-logo').animate({
+					opacity: 0
+				});
 				$('#practice-title').animate({
 					height: 0,
 					width: 0,
@@ -180,7 +190,9 @@ $(document).ready(function(){
 				$('#practice-cloud').animate({
 					left: 0
 				},1000);
-				$('.company-logo').fadeIn(2000);
+				$('.company-logo').animate({
+					opacity: 1
+				});
 			}
 			if(index == 5){
 				$('.page').css({"background": "url('./images/ico_bg.png') 0 -50px no-repeat"});
