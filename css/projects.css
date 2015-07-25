@@ -1,36 +1,99 @@
+header{
+    z-index: 1000;
+    height: 50px;
+    padding: 10px 0 0 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*border-bottom: 1px solid #000;*/
+}
+#logo{
+    display: block;
+    height: 40px;
+    margin-left: 30px;
+    width: 140px;
+    float: left;
+    background: #fff;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    padding-right: 5px;
+}
+#logo:hover{
+	text-decoration: none;
+	color: #ff9daa;
+}
+
+#back{
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 20px;
+	right: -40px;
+	background: #666 url('../images/backTop.png') center center no-repeat;
+	border-radius: 10px 0 0 10px;
+}
+
+.war-home{
+    /*background: rgb(146,246,237);*/
+    background: #333;
+}
+/*.war-content-1{
+    width: 100%;
+    height: 100%;
+    background: url('../images/homeBg.png') no-repeat right center;
+    margin: 0 auto;
+}*/
+.war-content-1{
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    background: url('../images/projectTitle.png') no-repeat left center;
+}
+.project-list{
+	padding-top: 50px;
+	width: 600px;
+	float: right;
+}
+.main-list{
+	display: block;
+	float: right;
+	padding: 0 20px;
+	line-height: 28px;
+	height: 28px;
+	margin: 5px;
+	border-radius: 28px;
+	color: #333;
+}
+.main-list:hover{
+	/*color: #fff;*/
+	text-decoration: none;
+}
+
 .war{
     width: 100%;
-    min-width: 1000px;
-    min-height: 600px;
+    min-width: 300px;
+    min-height: 300px;
     position: relative;
     height: 100%;
 }
-
-.war-0{
-	background: blue;
+.page_main{
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
 }
-.war-1{
-	background: red;
+.info{
+	width: 100%;
+	height: 50%;
+	float: left;
 }
-.war-2{
-	background: green;
+.info_img{
+	height: 40%;
+	border-radius: 20px 20px 0 0;
 }
-.war-3{
-	background: blue;
+.info_word{
+	height: 60%;
 }
-.war-4{
-	background: black;
-}
-.war-5{
-	background: #2db8ad;
-}
-.war-6{
-	background: #ff9daa;
-}
-.war-7{
-	background: #ccc;
-}
-.war-8{
-	background: #353433;
-}
-
