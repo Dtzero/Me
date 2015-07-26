@@ -23,6 +23,7 @@ $(document).ready(function(){
 					'<div id="war-'+ i +'" class="war war-'+ i +' section" style="background: '+ data.project[i].bg_color +'">'+
 						'<div class="page_main">'+
 							'<div class="info info_word">'+
+								'<div class="info_time">开发时间：'+ data.project[i].time +'</div>'+
 								'<div class="info_wra">'+
 									'<div class="info_name">'+ data.project[i].name +'</div>'+
 									'<div class="info_work">'+ data.project[i].work +'</div>'+
