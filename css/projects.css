@@ -69,6 +69,12 @@ header{
     padding-bottom: 10px;
     border-bottom: 2px solid #ff9daa;
 }
+.myWord{
+    text-align: right;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 100;
+}
 .main{
     position: absolute;
     bottom: 0;

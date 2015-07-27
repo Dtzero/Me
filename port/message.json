@@ -52,9 +52,9 @@
   ],
   "coding": [
     {
+      "name": "西邮移动应用开发实验室网站（新版网站）",
       "bg": "#fff",
       "type": "pc",
-      "name": "西邮移动应用开发实验室网站（新版网站）",
       "link": "javascript: alert('新版实验室网站正在开发中！请等待...');",
       "time": "2015/06-2015/**",
       "work": "项目组长，负责项目整体设计，前端重要页面的编码、Ajax、后台编码与数据库设计。",
@@ -63,110 +63,110 @@
   ],
   "project": [
     {
+      "name": "One's World（正在编写后台接口，前端页面暂时现显示设计图）",
       "bg_color": "#f5e653",
       "bg_image": "url('./images/projectsBg/ow.png') top center no-repeat",
       "type": "h5",
-      "name": "One's World（正在编写后台接口，前端页面暂时现显示设计图）",
       "link": "http://ztf.me/onesworld/world.html",
       "time": "2015/06-至今",
       "work": "独立完成，负责页面设计及前后台编码。",
       "info": "移动Web项目，后期将打包成移动App。本项目主要包含世界（心里话的倾诉（公开或私密），备忘记录）、天气（天气查询）、静静（烦躁、伤心、失落、犯错、失恋时通过音乐或图片使得到暂时平静与放松）。目前，只实现单用户版。后台使用ThinkPHP编写Api，前台通过Ajax调用解析Api进行数据交互。"
     },
     {
+      "name": "西安邮电大学高考信息查询",
       "bg_color": "rgb(146,246,237)",
       "bg_image": "url('./images/projectsBg/se.png') top center no-repeat",
       "type": "h5",
-      "name": "西安邮电大学高考信息查询",
       "link": "http://search.ztf.me",
       "time": "2015/06-2015/06",
       "work": "独立完成，负责页面设计及编码。",
       "info": "实现西安邮电大学被录取学生高考信息查询。手机端网页，做了简单的手机适配，用作微信公众号。前端通过Ajax获取信息，后端用PHP完成接口，返回json数据。"
     },
     {
+      "name": "前端导航（Front-End Guide）",
       "bg_color": "#eb5055",
       "bg_image": "url('./images/projectsBg/fe.png') top center no-repeat",
       "type": "pc",
-      "name": "前端导航（Front-End Guide）",
       "link": "http://frontend.ztf.me",
       "time": "2015/06-2015/06",
       "work": "独立完成，负责页面设计及编码。",
       "info": "实现了前端学习快捷导航，包含圈子、资源库、免费素材、数据接口/平台、实用工具、CSS/HTML、JavaScript、移动端/响应式、找工作等模块。主要运用Ajax请求json文件，解析json显示数据。"
     },
     {
+      "name": "陕西省影视产业管理平台（外包陕西省广电局项目，即将上线）",
       "bg_color": "#CDF0E9",
       "bg_image": "url('./images/projectsBg/wf.png') top center no-repeat",
       "type": "pc",
-      "name": "陕西省影视产业管理平台（外包陕西省广电局项目，即将上线）",
       "link": "http://124.115.8.38/login.php",
       "time": "2015/05-2015/06",
       "work": "主要负责管理系统的前端页面设计、实现以及文件上传的Ajax方式上传、普通Ajax交互等。",
       "info": "承接陕西省广电局项目，主要实现陕西省影视产业管理功能。针对各影视公司和广电局管理员实现相应的管理操作，如：影视、新闻、友情链接的添加、修改、删除功能，以及用户审核等管理，根据用户分类分为普通用户和管理员两个模块。"
     },
     {
+      "name": "个人简历--PC版",
       "bg_color": "#14CDD6",
       "bg_image": "url('./images/projectsBg/me.png') top center no-repeat",
       "type": "pc",
-      "name": "个人简历",
       "link": "http://resume.ztf.me",
       "time": "2015/05-至今",
       "work": "独立完成，负责页面设计及编码。",
       "info": "实现了个人简历页面，包含基本信息、专业技能、实习经历、项目经验、教育程度、兴趣爱好/简介、理解更多等页面。运用fullPage.js插件实现了整页滚动效果，暂时使用Ajax请求json文件数据，以后会获取数据库信息通过接口发送给Ajax完成数据交互；其中多处使用jQuery实现动画效果，是页面更加自然生动。"
     },
     {
+      "name": "Care--宠物公益网站",
       "bg_color": "#f9bc84",
       "bg_image": "url('./images/projectsBg/ca.png') top center no-repeat",
       "type": "h5",
-      "name": "Care--宠物公益网站",
       "link": "http://care.ztf.me",
       "time": "2015/05-2015/05",
       "work": "独立完成，负责编码。",
       "info": "外接项目，仅要求展示。运用jQueryMobile，通过本项目使我认识和熟悉jQueryMobile的优点及缺陷、学习和更深的了解手机端网站的设计思路、实现方式及编码技巧。"
     },
     {
+      "name": "JoinWeb--实验室Web组纳新管理操作平台",
       "bg_color": "#F36B6B",
       "bg_image": "url('./images/projectsBg/wj.png') top center no-repeat",
       "type": "pc",
-      "name": "JoinWeb--实验室Web组纳新管理操作平台",
       "link": "http://ztf.me/JoinWeb/index.php?user=04123148&pass=294cd3e5d8ebba84775ce8e3d014cc5b",
       "time": "2015/03-2015/03",
       "work": "负责整个项目编码及设计，完成报名网站后台处理操作及接口解析与交互设计。",
       "info": "实现实验室报名网站报名信息的后台处理，针对实验室纳新设计完成面试信息实时的更新。在方便各小组纳新信息处理、统计的同时，也使面试者能最快查询面试结果。通过Ajax请求解析给定Api获得数据，进行操作实现全部功能。"
     },
     {
+      "name": "MyCollege校园综合网站（暂时只实现了成绩单和图书查询模块）",
       "bg_color": "#eeF228",
       "bg_image": "url('./images/projectsBg/mc.png') top center no-repeat",
       "type": "pc",
-      "name": "MyCollege校园综合网站（暂时只实现了成绩单和图书查询模块）",
       "link": "http://mycollege.ztf.me",
       "time": "2015/02-至今",
       "work": "项目组长，负责项目整体设计、前端重要页面的编码、Ajax、教务系统和图书馆接口解析、后台编码与数据库设计。",
       "info": "实现了校园服务的整合，该网站包含：易校园（校园二手市场）、资料库、订餐吧、成绩单、图书查询、学生组织、实验室等页面，满足大学生校园生活和学习的基本需求。"
     },
     {
+      "name": "易校园（版本三）",
       "bg_color": "#17C8A8",
       "bg_image": "url('./images/projectsBg/xe.png') top center no-repeat",
       "type": "pc",
-      "name": "易校园（版本三）",
       "link": "http://ecampus.ztf.me",
       "time": "2014/11-2014/11",
       "work": "负责全部项目设计及编码，实现易校园前端效果。",
       "info": "项目模仿天猫、淘宝等交易网站，主要实现了校园二手交易的前端首页效果。"
     },
     {
+      "name": "多用户个人博客系统（由于MongoDB无法部署，只能展示静态内容）",
       "bg_color": "#FF9DAA",
       "bg_image": "url('./images/projectsBg/bl.png') top center no-repeat",
       "type": "pc",
-      "name": "多用户个人博客系统（由于MongoDB无法部署，只能展示静态内容）",
       "link": "http://ztf.coding.io/",
       "time": "2014/11-至今",
       "work": "负责整个项目设计，所有前端编码、Ajax、所有后台编码和数据库设计。",
       "info": "使用( CSS+HTML+JavaScript+jQuery+Ajax等 )前端技术、PHP技术、Mongodb数据库设计的个人博客系统，实现了心情、日志的发表，照片，项目的上传以及留言等基本功能。"
     },
     {
+      "name": "易校园（版本二）",
       "bg_color": "#BADF90",
       "bg_image": "url('./images/projectsBg/ex.png') top center no-repeat",
       "type": "pc",
-      "name": "易校园（版本二）",
       "link": "http://exy.ztf.me",
       "time": "2014/08-2014/09",
       "work": "负责全部项目设计及编码，实现易校园前端效果。",
