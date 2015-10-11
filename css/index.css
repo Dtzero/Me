@@ -1,3 +1,13 @@
+html,body{
+    font-family: 'Microsoft JhengHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    /*font-family: 'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;*/
+    color: #fff;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+a{
+    color: #fff;
+}
 .contentWar{
     height: 100%;
     min-height: 600px;
